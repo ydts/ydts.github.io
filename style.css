@@ -1,0 +1,83 @@
+* {margin:0;padding:0}
+html {background-color:#eee;}
+body {margin:0 auto;padding:15px;width:960px;font-family:"Microsoft YaHei", sans-serif;color:#333;}
+a {text-decoration:none;}
+.clearfix:after {content:"";display:block;clear:both;}
+header {
+	position:fixed;
+	top:15px;
+	bottom:15px;
+	width:160px;
+	background-color:#259;
+	border-radius:2px;
+	box-shadow:0 0 5px #aaa;
+	color:#fff;
+}
+#container {margin-left:175px;}
+
+
+/*header*/
+header .brand {margin:5px auto 0;width:148px;}
+header .brand div {
+	float:left;
+	margin:1px;
+	width:70px;
+	height:70px;
+	border:1px solid #fff;
+	font-size:3em;
+	text-align:center;
+}
+header nav {margin-top:50px;}
+header nav li {position:relative;list-style-type:none;}
+header nav li a {
+	display:block;
+	padding:3px 10px;
+	width:134px;
+	background-color:#259;
+	border:3px solid #259;
+	border-bottom:none;
+	text-align:center;
+	color:#fff;
+	transition:0.5s;
+}
+header nav li li a {border-left:none;color:#fff;}
+header nav li:last-child >a {border-bottom:3px solid #259}
+header nav li:hover > a {background-color:#fff;color:#259;}
+header nav li ul {display:none;}
+header nav li:hover > ul {display:block;position:absolute;top:0;left:100%;}
+header nav .arrow {
+    position:absolute;
+    right:10px;
+    top:11px;
+    width:0;
+    height:0;
+    border:6px solid;
+    border-color:transparent transparent transparent #fff;
+}
+header nav li:hover > a > .arrow {border-color:transparent transparent transparent #259;}
+header .contact {position:absolute;bottom:10px;}
+header .contact p {margin:5px 20px;font-size:0.8em;}
+
+
+/*container*/
+#container .cardwrap {
+	margin-bottom:15px;
+	padding:15px;
+	background-color:#fff;
+	border-radius:2px;
+	box-shadow:0 0 5px #aaa;
+}
+#container .cardwrap:last-child {margin:0;}
+#container #firstcard {padding-top:50px;background-color:#259;color:#fff;}
+#container #firstcard p {font-size:2em;text-align:right;}
+#container .cardwrap .title {
+	padding:5px 15px;
+	font-size:1.5em;
+	color:#259;
+	border-bottom:1px solid #259;
+}
+#container .cardwrap h1 {margin:15px 15px;font-size:1em;}
+#container .cardwrap h2 {margin:5px 15px;font-size:0.8em;font-weight:normal;}
+#container .cardwrap p {margin:5px 25px;font-size:0.8em;}
+#container .cardwrap ul {margin:5px 40px;font-size:0.8em;}
+#container .cardwrap table {margin:5px auto;font-size:0.8em;}
